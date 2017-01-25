@@ -21,7 +21,7 @@ import org.apache.ibatis.lang.UsesJava8;
 import org.junit.experimental.categories.Category;
 
 @Category(UsesJava8.class)
-public interface Mapper {
+interface Mapper {
 
   @Select("select * from users where id = #{id}")
   User getUserById(Integer id);
